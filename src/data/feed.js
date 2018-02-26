@@ -7,7 +7,8 @@ const data = [
     timestamp: "45m",
     likes: 138,
     avatar: "/img/amundsen.jpg",
-    id: "12r8yfq9"
+    id: "12r8yfq9",
+    new: true
   },
   {
     fullname: "Fridtjof Nansen",
@@ -17,7 +18,8 @@ const data = [
     timestamp: "2h",
     likes: 227,
     avatar: "/img/nansen.jpg",
-    id: "po3ertjfws"
+    id: "po3ertjfws",
+    new: true
   },
   {
     fullname: "Helge Ingstad",

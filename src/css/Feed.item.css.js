@@ -11,7 +11,8 @@ const FeedItemCSS = ({
   body,
   timestamp,
   likes,
-  avatar
+  avatar,
+  isNew
 }) => (
   <div className="css-feed-item">
     <div className="css-flag">
@@ -31,7 +32,9 @@ const FeedItemCSS = ({
             <span> · </span>
             <span className="css-feed-item-user">{`@${username}`}</span>
           </div>
-          <span className="css-feed-item-timestamp">{timestamp}</span>
+          <span className={`css-feed-item-timestamp ${isNew ? "new" : ""}`}>
+            {timestamp}
+          </span>
         </div>
       </div>
     </div>

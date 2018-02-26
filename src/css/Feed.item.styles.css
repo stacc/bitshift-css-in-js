@@ -12,15 +12,15 @@
 }
 
 .css-feed-item:nth-child(2):hover .css-feed-item-footer {
-  border-color: #7ed321;
+  border-color: #8ccfb9;
 }
 
 .css-feed-item:nth-child(3):hover .css-feed-item-footer {
-  border-color: #184ab1;
+  border-color: #88a0ba;
 }
 
 .css-feed-item:nth-child(4):hover .css-feed-item-footer {
-  border-color: #f575a6;
+  border-color: #f27788;
 }
 
 .css-feed-item:last-child {
@@ -28,13 +28,15 @@
 }
 
 .css-feed-item-avatar {
-  width: 54px;
+  width: 36px;
   border-radius: 50%;
 }
 
 .css-feed-item-header {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+  font-size: 14px;
 }
 
 .css-feed-item-author {
@@ -58,11 +60,13 @@
   text-align: right;
 }
 
+.css-feed-item-timestamp.new {
+  color: #f27788;
+}
+
 .css-feed-item-body {
   font-family: serif;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  margin: 24px 0;
+  margin: 12px 0;
 }
 
 .css-feed-item-footer {
@@ -104,4 +108,20 @@
 .css-feed-item-icon {
   width: 20px;
   vertical-align: middle;
+}
+
+@media screen and (min-width: 740px) {
+  .css-feed-item-body {
+    margin: 24px 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+
+  .css-feed-item-avatar {
+    width: 54px;
+  }
+
+  .css-feed-item-header {
+    font-size: 14px;
+  }
 }

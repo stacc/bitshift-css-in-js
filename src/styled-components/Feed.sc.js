@@ -12,6 +12,7 @@ const FeedSC = () => (
         timestamp={item.timestamp}
         likes={item.likes}
         avatar={item.avatar}
+        isNew={item.new}
         key={item.id}
       />
     ))}
