@@ -1,4 +1,4 @@
-import React, { Component } from "react"
+import React from "react"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import FeedSC from "./styled-components/Feed.sc"
 import FeedBEM from "./rebem/Feed.bem"
@@ -19,7 +19,7 @@ const Navigation = () => (
 )
 
 const App = () => (
-  <div id="root">
+  <main id="root">
     <Router>
       <div>
         <Route exact path="/" component={Navigation} />
@@ -28,7 +28,7 @@ const App = () => (
         <Route path="/styled-components" component={FeedSC} />
       </div>
     </Router>
-  </div>
+  </main>
 )
 
 export default App
