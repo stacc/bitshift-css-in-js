@@ -1,6 +1,9 @@
 import React from "react"
 import "./Feed.item.styles.css"
 import "./Feed.flag.styles.css"
+import IconHeart from "../icons/Heart"
+import IconBubble from "../icons/Bubble"
+import IconMap from "../icons/Map"
 
 const FeedItemCSS = ({
   fullname,
@@ -34,7 +37,17 @@ const FeedItemCSS = ({
     </div>
     <p className="css-feed-item-body">{body}</p>
     <div className="css-feed-item-footer">
-      <span className="css-feed-item-likes">Likes: {likes}</span>
+      <button className="css-feed-item-btn">
+        <IconBubble className="css-feed-item-icon" />
+      </button>
+      <button className="css-feed-item-btn">
+        <IconHeart className="css-feed-item-icon" />
+        <span className="css-feed-item-text">{likes}</span>
+      </button>
+      <button className="css-feed-item-btn">
+        <IconMap className="css-feed-item-icon" />
+        <span className="css-feed-item-text">Location</span>
+      </button>
     </div>
   </div>
 )

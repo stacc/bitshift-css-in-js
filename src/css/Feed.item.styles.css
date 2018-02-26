@@ -1,10 +1,26 @@
 .css-feed-item {
   padding: 24px;
-  padding-bottom: 12px;
+  padding-bottom: 6px;
   margin-bottom: 12px;
   border-bottom-width: 0;
   background-color: #fbfbfa;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.css-feed-item:nth-child(1):hover .css-feed-item-footer {
+  border-color: #dc7429;
+}
+
+.css-feed-item:nth-child(2):hover .css-feed-item-footer {
+  border-color: #7ed321;
+}
+
+.css-feed-item:nth-child(3):hover .css-feed-item-footer {
+  border-color: #184ab1;
+}
+
+.css-feed-item:nth-child(4):hover .css-feed-item-footer {
+  border-color: #f575a6;
 }
 
 .css-feed-item:last-child {
@@ -50,8 +66,42 @@
 }
 
 .css-feed-item-footer {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 6px;
   border-top: 2px solid #efede7;
-  padding-top: 12px;
   font-size: 12px;
   color: #787878;
+  transition: border 0.2s ease;
+}
+
+.css-feed-item-btn {
+  border: 0;
+  min-height: 36px;
+  vertical-align: middle;
+  text-align: left;
+  line-height: 36px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.css-feed-item-text {
+  margin-left: 6px;
+  display: inline-block;
+  line-height: 36px;
+}
+
+.css-feed-item-btn:not(:last-of-type) {
+  margin-right: 24px;
+}
+
+.css-feed-item-btn:hover,
+.css-feed-item-btn:focus,
+.css-feed-item-btn:active {
+  background-color: #f2f0e9;
+}
+
+.css-feed-item-icon {
+  width: 20px;
+  vertical-align: middle;
 }
