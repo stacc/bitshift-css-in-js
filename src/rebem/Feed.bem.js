@@ -4,6 +4,7 @@ import FeedItemBEM from "./Feed.item.bem"
 
 const FeedBEM = () => (
   <div>
+    <img src="/img/logo.svg" alt="" />
     {data.map(item => (
       <FeedItemBEM
         fullname={item.fullname}

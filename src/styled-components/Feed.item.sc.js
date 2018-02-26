@@ -1,6 +1,14 @@
 import React from "react"
 
-const FeedItemSC = ({ fullname, username, body, timestamp, likes, avatar }) => (
+const FeedItemSC = ({
+  fullname,
+  username,
+  body,
+  timestamp,
+  likes,
+  avatar,
+  isNew
+}) => (
   <div>
     {fullname}
     {username}

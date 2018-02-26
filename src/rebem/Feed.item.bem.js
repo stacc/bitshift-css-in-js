@@ -6,7 +6,8 @@ const FeedItemBEM = ({
   body,
   timestamp,
   likes,
-  avatar
+  avatar,
+  isNew
 }) => (
   <div>
     {fullname}

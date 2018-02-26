@@ -4,6 +4,7 @@ import FeedItemCM from "./Feed.item.cm"
 
 const FeedCM = () => (
   <div>
+    <img src="/img/logo.svg" alt="" />
     {data.map(item => (
       <FeedItemCM
         fullname={item.fullname}

@@ -5,6 +5,7 @@ import FeedItemCSS from "./Feed.item.css.js"
 
 const FeedCSS = () => (
   <div className="css-outer">
+    <img className="css-logo" src="/img/logo.svg" alt="" />
     <div className="css-wrapper">
       <ol className="css-feed-list">
         {data.map(item => (

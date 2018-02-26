@@ -4,6 +4,7 @@ import FeedItemGlamor from "./Feed.item.glamor"
 
 const FeedGlamor = () => (
   <div>
+    <img src="/img/logo.svg" alt="" />
     {data.map(item => (
       <FeedItemGlamor
         fullname={item.fullname}

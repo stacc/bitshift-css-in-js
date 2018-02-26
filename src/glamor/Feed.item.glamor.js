@@ -6,7 +6,8 @@ const FeedItemGlamor = ({
   body,
   timestamp,
   likes,
-  avatar
+  avatar,
+  isNew
 }) => (
   <div>
     {fullname}

@@ -4,6 +4,7 @@ import FeedItemSC from "./Feed.item.sc"
 
 const FeedSC = () => (
   <div>
+    <img src="/img/logo.svg" alt="" />
     {data.map(item => (
       <FeedItemSC
         fullname={item.fullname}
