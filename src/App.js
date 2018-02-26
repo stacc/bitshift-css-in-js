@@ -1,32 +1,34 @@
 import React, { Component } from "react"
-import feedData from "./data/feed"
-import FeedItem from "./FeedItem"
+import { BrowserRouter as Router, Route, Link } from "react-router-dom"
+import FeedSC from "./styled-components/Feed.sc"
+import FeedBEM from "./rebem/Feed.bem"
+import FeedGlamor from "./glamor/Feed.glamor"
 
-class App extends Component {
-  render() {
-    return (
+const Navigation = () => (
+  <ul>
+    <li>
+      <Link to="/rebem">reBEM</Link>
+    </li>
+    <li>
+      <Link to="/glamor">Glamor</Link>
+    </li>
+    <li>
+      <Link to="/styled-components">Styled Components</Link>
+    </li>
+  </ul>
+)
+
+const App = () => (
+  <div id="root">
+    <Router>
       <div>
-        <header>
-          <h1>
-            Bare en kjapp boilerplate for å kunne implementere med ulike
-            css-løsninger
-          </h1>
-        </header>
-        <div>
-          {feedData.map(item => (
-            <FeedItem
-              name={item.name}
-              username={item.username}
-              body={item.body}
-              timestamp={item.timestamp}
-              likes={item.likes}
-              avatar={item.avatar}
-            />
-          ))}
-        </div>
+        <Route exact path="/" component={Navigation} />
+        <Route path="/rebem" component={FeedBEM} />
+        <Route path="/glamor" component={FeedGlamor} />
+        <Route path="/styled-components" component={FeedSC} />
       </div>
-    )
-  }
-}
+    </Router>
+  </div>
+)
 
 export default App
