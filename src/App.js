@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter as Router, Route, Link } from "react-router-dom"
 import FeedCSS from "./css/Feed.css.js"
-import FeedBEM from "./rebem/Feed.bem"
+import FeedBEM from "./bem/Feed.bem"
 import FeedGlamor from "./glamor/Feed.glamor"
 import FeedCM from "./css-modules/Feed.cm"
 import FeedSC from "./styled-components/Feed.sc"
@@ -13,7 +13,7 @@ const Navigation = () => (
       <Link to="/css">CSS</Link>
     </li>
     <li>
-      <Link to="/rebem">reBEM</Link>
+      <Link to="/bem">BEM</Link>
     </li>
     <li>
       <Link to="/glamor">Glamor</Link>
@@ -33,7 +33,7 @@ const App = () => (
       <div>
         <Route exact path="/" component={Navigation} />
         <Route path="/css" component={FeedCSS} />
-        <Route path="/rebem" component={FeedBEM} />
+        <Route path="/bem" component={FeedBEM} />
         <Route path="/glamor" component={FeedGlamor} />
         <Route path="/css-modules" component={FeedCM} />
         <Route path="/styled-components" component={FeedSC} />
