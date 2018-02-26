@@ -1,0 +1,17 @@
+.css-outer {
+  background-color: #f2f0e9;
+  background-image: url("/img/bg.png");
+  background-repeat: repeat;
+  color: #2b2b2b;
+  min-height: 100vh; /* [3] */
+}
+
+.css-wrapper {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 48px 12px;
+}
+
+.css-feed-list {
+  list-style-type: none;
+}

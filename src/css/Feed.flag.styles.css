@@ -1,0 +1,25 @@
+.css-flag {
+  display: table;
+  width: 100%;
+  border-spacing: 0;
+}
+
+.css-flag-img,
+.css-flag-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.css-flag-img {
+  width: 1px;
+  padding-right: 12px;
+}
+
+.css-flag-img > img {
+  max-width: none;
+}
+
+.css-flag-body {
+  width: auto;
+  margin-bottom: 0;
+}

@@ -12,6 +12,7 @@ const FeedBEM = () => (
         timestamp={item.timestamp}
         likes={item.likes}
         avatar={item.avatar}
+        key={item.id}
       />
     ))}
   </div>

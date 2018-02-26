@@ -1,11 +1,11 @@
 import React from "react"
 import data from "../data/feed"
-import FeedItemGlamor from "./Feed.item.glamor"
+import FeedItemCM from "./Feed.item.cm"
 
-const FeedGlamor = () => (
+const FeedCM = () => (
   <div>
     {data.map(item => (
-      <FeedItemGlamor
+      <FeedItemCM
         fullname={item.fullname}
         username={item.username}
         body={item.body}
@@ -18,4 +18,4 @@ const FeedGlamor = () => (
   </div>
 )
 
-export default FeedGlamor
+export default FeedCM

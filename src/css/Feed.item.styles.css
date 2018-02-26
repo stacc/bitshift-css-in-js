@@ -1,0 +1,57 @@
+.css-feed-item {
+  padding: 24px;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-bottom-width: 0;
+  background-color: #fbfbfa;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.03);
+}
+
+.css-feed-item:last-child {
+  border-bottom: 1px solid #dfdfe6;
+}
+
+.css-feed-item-avatar {
+  width: 54px;
+  border-radius: 50%;
+}
+
+.css-feed-item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.css-feed-item-author {
+  font-weight: bold;
+  color: #2b2b2b;
+  text-decoration: none;
+}
+
+.css-feed-item-author:hover,
+.css-feed-item-author:active,
+.css-feed-item-author:focus {
+  color: #dc7429;
+}
+
+.css-feed-item-user,
+.css-feed-item-timestamp {
+  color: #787878;
+}
+
+.css-feed-item-timestamp {
+  text-align: right;
+}
+
+.css-feed-item-body {
+  font-family: serif;
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin: 24px 0;
+}
+
+.css-feed-item-footer {
+  border-top: 2px solid #efede7;
+  padding-top: 12px;
+  font-size: 12px;
+  color: #787878;
+}
