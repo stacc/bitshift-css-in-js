@@ -14,7 +14,7 @@ const IcoMap = ({ className }) => (
         />
         <polygon
           fill="#0C0F13"
-          fill-opacity=".3"
+          fillOpacity=".3"
           points="73 83 53 93 53 13 73 3"
         />
         <path
