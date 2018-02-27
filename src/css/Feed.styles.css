@@ -5,7 +5,7 @@
   background-attachment: fixed;
   background-repeat: repeat;
   color: #2b2b2b;
-  min-height: 100vh; /* [3] */
+  min-height: 100vh;
 }
 
 .css-logo {

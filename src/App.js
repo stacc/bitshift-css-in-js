@@ -16,10 +16,10 @@ const Navigation = () => (
       <Link to="/bem">BEM</Link>
     </li>
     <li>
-      <Link to="/glamor">Glamor</Link>
+      <Link to="/css-modules">css-modules</Link>
     </li>
     <li>
-      <Link to="/css-modules">css-modules</Link>
+      <Link to="/glamor">Glamor</Link>
     </li>
     <li>
       <Link to="/styled-components">Styled Components</Link>
