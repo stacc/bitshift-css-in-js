@@ -9,14 +9,14 @@ const FeedItemBEM = ({
   avatar,
   isNew
 }) => (
-  <div>
+  <li>
     {fullname}
     {username}
     {body}
     {timestamp}
     {likes}
     <img src={avatar} alt={`Bilde av ${fullname}`} />
-  </div>
+  </li>
 )
 
 export default FeedItemBEM
